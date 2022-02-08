@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/13a543504a.js" crossorigin="anonymous"></script>
     <style>
         .container{
             display: flex;
             justify-content: center;
+            margin-top: 20px;
         }
         .login-form{
             display: flex;
@@ -17,16 +19,58 @@
             
         }
         .login-form input,button{
+            font-size: 1.2em;
+            margin-top: 10px;
+            border: 1px solid gray;
+            border-radius: 3px;
+            padding-left: 10px;
+
             
+        }
+        button{
+            color: aqua;
+            background-color: black;
+            font-weight: 700;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+            font-size: 1.5em;
+
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
         }
 
     </style>
 
 </head>
 <body>
+    <header>
+        <nav>
+           <div>
+            <a href="">Home</a>
+            <a href="">Order </a>
+            <a href="">issues</a>
+            <a href="">about us</a>
+           </div>
+           <div>
+            <a href=""><i class="far fa-user"></i></a>
+            <a href=""><i class="fas fa-user-shield"></i></a>
+ 
+           </div>
+           
+          
+
+
+        </nav>
+    </header>
     <section class="container">
         <form action="" class="login-form" >
-            <h3> Give Ur details Here</h3>
+            <h1> Give Ur details Here</h1>
             <input type="email" name="email" placeholder="Enter Ur Email" id="" required>
             <input type="password" name="password" placeholder="Enter Ur Password" id="">
             <button type="submit">Login</button>
